@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317048889286",
+    "project_id": "misa-f3530",
+    "storage_bucket": "misa-f3530.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317048889286:android:deebde7baf1b5a09dadcc7",
+        "android_client_info": {
+          "package_name": "com.example.misa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiqVBVs9Oj37mETKCwu44lh2CWRjMEI0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

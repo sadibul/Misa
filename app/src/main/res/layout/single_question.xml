@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E66E6E"
+    app:layout_constraintTop_toBottomOf="parent"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="How are you feeling today?"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <RadioButton
+                android:id="@+id/option1_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Happy"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+            <RadioButton
+                android:id="@+id/option2_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sick"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/option3_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sad"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+            <RadioButton
+                android:id="@+id/option4_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angry"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:background="#FAFAFA">
+
+        </View>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EA6F6F">
+
+    <!-- App Name TextView -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MeHelp"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Sign Up Form -->
+    <RelativeLayout
+        android:id="@+id/signUpForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="80dp"
+        android:padding="20dp">
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="15dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="15dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/edtUsername"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="15dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+
+            android:textSize="16sp"
+            android:layout_below="@id/edtEmail"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPassword"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#EA6F6F"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_below="@id/edtPassword"/>
+
+    </RelativeLayout>
+
+    <!-- Already have an account Section -->
+    <RelativeLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpForm"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <!-- Already Have Account TextView -->
+        <TextView
+            android:id="@+id/alreadyHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
