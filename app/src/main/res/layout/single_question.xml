@@ -1,18 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#E66E6E"
-    app:layout_constraintTop_toBottomOf="parent"
-
-    >
-
+    app:layout_constraintTop_toBottomOf="parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/question_xml"
@@ -25,64 +23,43 @@
             android:text="How are you feeling today?"
             android:textColor="#FFFFFF"
             android:textSize="23sp"
-            android:textStyle="bold">
+            android:textStyle="bold" />
 
-        </TextView>
+        <!-- RadioGroup ensures only one RadioButton is selectable -->
 
 
-        <LinearLayout
+        <RadioButton
+            android:id="@+id/option1_xml"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
+            android:text="Happy"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
-            >
-
-            <RadioButton
-                android:id="@+id/option1_xml"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Happy"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-
-            <RadioButton
-                android:id="@+id/option2_xml"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sick"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-
+        <RadioButton
+            android:id="@+id/option2_xml"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/option3_xml"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sad"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+            android:text="Sick"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
 
-            <RadioButton
-                android:id="@+id/option4_xml"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Angry"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+        <RadioButton
+            android:id="@+id/option3_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sad"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
-        </LinearLayout>
+        <RadioButton
+            android:id="@+id/option4_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Angry"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
 
         <View
@@ -91,16 +68,6 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="5dp"
-            android:background="#FAFAFA">
-
-        </View>
+            android:background="#FAFAFA" />
     </LinearLayout>
-
-
-</LinearLayout>
-
-
-
-
-
-
+</androidx.constraintlayout.widget.ConstraintLayout>

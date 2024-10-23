@@ -1,6 +1,5 @@
 package com.example.misa
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -24,7 +23,7 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         // Initialize views
-        edtEmail = findViewById(R.id.edtEmail)
+        edtEmail = findViewById(R.id.edtEmail_logIn)
         edtPassword = findViewById(R.id.edtPassword)
         btnLogin = findViewById(R.id.btnLogin)
         text_check_signup = findViewById(R.id.newuser)
@@ -35,13 +34,13 @@ class login : AppCompatActivity() {
 
         // Login button click event
         btnLogin.setOnClickListener {
-            val enteredUsername = edtEmail.text.toString()
-            val enteredPassword = edtPassword.text.toString()
+            val email = edtEmail.text.toString()
+            val password = edtPassword.text.toString()
 
-            if (enteredUsername.isEmpty() || enteredPassword.isEmpty()) {
+            if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill All the details", Toast.LENGTH_SHORT).show()
             } else {
-                auth.signInWithEmailAndPassword(enteredUsername, enteredPassword)
+                auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
                             Toast.makeText(this, "Sign in successfully", Toast.LENGTH_SHORT).show()

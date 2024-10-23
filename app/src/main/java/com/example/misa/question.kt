@@ -1,5 +1,6 @@
 package com.example.misa
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -41,7 +42,7 @@ class question : AppCompatActivity(), View.OnClickListener {
         option4 = findViewById(R.id.angry_xml)
 
         next_button.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, GaugeActivity::class.java))
         }
         implementation()
     }
