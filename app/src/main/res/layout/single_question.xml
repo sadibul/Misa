@@ -1,73 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#E66E6E"
-    app:layout_constraintTop_toBottomOf="parent">
+    android:padding="8dp">
 
-    <LinearLayout
+    <!-- CardView for shadow and rounded corner effect -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_margin="8dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="5dp"
+        android:elevation="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@android:color/white">
 
-        <TextView
-            android:id="@+id/question_xml"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="15dp"
-            android:text="How are you feeling today?"
-            android:textColor="#FFFFFF"
-            android:textSize="23sp"
-            android:textStyle="bold" />
-
-        <!-- RadioGroup ensures only one RadioButton is selectable -->
-
-
-        <RadioButton
-            android:id="@+id/option1_xml"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Happy"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <RadioButton
-            android:id="@+id/option2_xml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sick"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            <!-- Question Text -->
+            <TextView
+                android:id="@+id/question_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="How are you feeling today?"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
+            <!-- Option 1 -->
+            <RadioButton
+                android:id="@+id/option1_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Happy"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
 
-        <RadioButton
-            android:id="@+id/option3_xml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sad"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@android:color/darker_gray" />
 
-        <RadioButton
-            android:id="@+id/option4_xml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Angry"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            <!-- Option 2 -->
+            <RadioButton
+                android:id="@+id/option2_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sick"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
 
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@android:color/darker_gray" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.6dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="5dp"
-            android:background="#FAFAFA" />
-    </LinearLayout>
+            <!-- Option 3 -->
+            <RadioButton
+                android:id="@+id/option3_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sad"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- Option 4 -->
+            <RadioButton
+                android:id="@+id/option4_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angry"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
